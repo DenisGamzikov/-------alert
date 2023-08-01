@@ -87,14 +87,12 @@ alert(Countdown)
       alert(result)
       break
   }
-  const UserAgreed = confirm("Дайте свое согласие");
-     while (UserAgreed == false) {
-      confirm("Дайте свое согласие")
-      break
-      } 
+
+do {
+    UserAgreed = confirm("Дайте свое согласие")
+}
+while  (UserAgreed !== true)
     
-
-
  
 
 //   задание на вопрос возраста и пола
