@@ -1,4 +1,4 @@
-// Задание с разными типами данных, и выведение имени на экран
+function breeding() {
 alert("Привет")
 alert("12")
 let any
@@ -9,18 +9,18 @@ alert(check)
 let userName = prompt("Как тебя зовут?");
 
 
-alert("Добро пожаловать на сайт, " + userName)
+alert("Добро пожаловать на сайт, " + userName)}
 
 
-// задание на сумму двух чисел
+function sum() {
 let firstNumber = prompt("Введите первое число")
 firstNumber = Number(firstNumber)
 let SecondNumber = prompt("Ведите второе число");
 SecondNumber = Number(SecondNumber)
 let sum = firstNumber + SecondNumber;
-alert("сумма чисел = " + sum)
+alert("сумма чисел = " + sum)}
 
-// задание на отсчет
+function countdown() {
 let Countdown = prompt("Введите любое число от 0 до 10")
 Countdown = Number(Countdown)
 if(Countdown > 10) {
@@ -33,10 +33,10 @@ alert(Countdown)
     Countdown = Countdown - 1
        alert(Countdown)
      }
+    }
 
 
-
-//   Задание на звуки животных
+function sounds() {
   let animal = prompt("Введите свое любимое животное")
   switch (animal) {
     case 'собака': { 
@@ -59,14 +59,14 @@ alert(Countdown)
         alert("Мы не знаем такого животного")
     }
   }
-  
+}
 
-// Задание на математический пример
+function example() {
   let firstNumeric = prompt("Введите первое число")
   firstNumeric = Number(firstNumeric)
   let SecondNumeric = prompt("Ведите второе число");
   SecondNumeric = Number(SecondNumeric)
-  let sign = prompt("Введите арифметичческий знак(+,-,*,/)")
+  let sign = prompt("Введите арифметичческий знак(+,-,*,/,%)")
   
   
   switch(sign) {
@@ -86,16 +86,21 @@ alert(Countdown)
       result = firstNumeric / SecondNumeric
       alert(result)
       break
+      case "%":
+      result = firstNumeric % SecondNumeric
+      alert(result)
+      break
   }
-
+  function agreement() {
+let  UserAgreed;
 do {
     UserAgreed = confirm("Дайте свое согласие")
 }
 while  (UserAgreed !== true)
-    
- 
+}
+}
 
-//   задание на вопрос возраста и пола
+function ageAndGender() {
 let Age = prompt("Введите свой возраст")
 Age = Number(Age)
 let Gender = prompt("Вы мужского пола?")
@@ -114,5 +119,5 @@ else if (Age < 16 && Gender == "Нет") {
 else {
     alert("Вы неправильно ответили на какой-то из вопросов")
 }
-
+}
 
