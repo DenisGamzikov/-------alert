@@ -1,53 +1,51 @@
 function whatYear() {
-  let Year = prompt("Введите год");
-  Year = Number(Year);
-  let currentYear = Year % 100;
-  let currentCentury = Year / 100;
-
-  let remnantCentury = currentCentury % 1;
+  let year = prompt("Введите год");
+  year = Number(year);
+  let yearOfCentury = year % 100;
+  let century = year / 100;
   let afterChristmas = confirm("это год от Р.Х. или нет?");
-  if (afterChristmas == 1) {
-    if (remnantCentury > 0) {
-      let readyCentury = currentCentury + 1;
+  if (afterChristmas) {
+    if (century > 0) {
+      let readyCentury = century + 1;
 
       let cleanCentury = Math.trunc(readyCentury);
       alert(
-        Year +
+        year +
           " год это " +
-          currentYear +
+          yearOfCentury +
           " год " +
           cleanCentury +
           "ого " +
           "века"
       );
     } else {
-      let readyCentury = currentCentury;
+      let readyCentury = century;
       let njeornj = Math.trunc(readyCentury);
       let lastYear = 100;
       alert(
-        Year + " год это " + lastYear + " год " + cleanCentury + "ого " + "века"
+        year + " год это " + lastYear + " год " + cleanCentury + "ого " + "века"
       );
     }
-  } else if (afterChristmas == 0) {
-    if (remnantCentury > 0) {
-      let readyCentury = currentCentury + 1;
+  } else if (afterChristmas) {
+    if (century > 0) {
+      let readyCentury = century + 1;
 
       let cleanCentury = Math.trunc(readyCentury);
       alert(
-        Year +
+        year +
           " год это " +
-          currentYear +
+          yearOfCentury +
           " год " +
           cleanCentury +
           "ого " +
           "века до рождества Христова"
       );
     } else {
-      let readyCentury = currentCentury;
+      let readyCentury = century;
       let cleanCentury = Math.trunc(readyCentury);
       let lastYear = 100;
       alert(
-        Year +
+        year +
           " год это " +
           lastYear +
           " год " +

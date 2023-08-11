@@ -9,9 +9,9 @@ let sound = {
 function sounds() {
   let animal = prompt("Введите свое любимое животное");
 
-  if (sound[animal] !== undefined) {
+  if (!sound[animal]) {
     alert(sound[animal]);
-  } else if (sound[animal] == undefined) {
+  } else {
     let soundNewAnimal = prompt(
       "Мы не знаем такого животного. Какой звук оно издает?"
     );
