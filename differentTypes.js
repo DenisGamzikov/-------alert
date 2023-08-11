@@ -6,31 +6,17 @@ function breeding() {
   let userName = prompt("Как тебя зовут?");
   let end = new Date().getTime();
   let milliSeconds = end - start;
-  let clearSeconds;
-  let clearMinutes;
-  let clearMilliseconds;
-  if (milliSeconds > 999) {
-    let seconds = milliSeconds / 1000;
-    clearSeconds = Math.trunc(seconds);
-    clearMilliseconds = milliSeconds % 1000;
-    if (seconds > 59) {
-      let minutes = seconds / 60;
-      clearMinutes = Math.trunc(minutes);
-    } else if (seconds <= 59) {
-      clearMinutes = 0;
-    } else if (milliSeconds <= 999) {
-      clearSeconds = 0;
-      clearMilliseconds = milliSeconds;
-    }
-  }
+  let clearMilliseconds = milliSeconds % 1000;
+  let seconds = Math.trunc(milliSeconds / 1000);
+  let minutes = Math.trunc(seconds / 60);
 
   let answerTime =
     "Вы отвечали на вопрос " +
     clearMilliseconds +
     " милисекунд, " +
-    clearSeconds +
+    seconds +
     " секунд, " +
-    clearMinutes +
+    minutes +
     " минут";
   alert(answerTime);
   if (6 < hours < 12) {
