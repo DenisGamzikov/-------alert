@@ -1,12 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./style.css" rel="stylesheet" />
     <title>Document</title>
-</head>
-<body>
-    <script src="./script.js"></script>
-</body>
+  </head>
+  <body>
+    <h1><span id="greetings"></span></h1>
+    <nav>
+      <button onclick="breeding()">Задание с приветствием</button>
+      <button onclick="sum()">задание на сумму двух чисел</button>
+      <button onclick="countdown()">задание на отсчет</button>
+      <button onclick="sounds()">Задание на звуки животных</button>
+      <button onclick="example()">Калькулятор</button>
+      <button onclick="agreement()">Задание на согласие</button>
+      <button onclick="ageAndGender()">
+        задание на вопрос возраста и пола
+      </button>
+      <button onclick="whatYear()">задание на год и век</button>
+      <button onclick="twoNumbers()">задание с двумя числами</button>
+      <button onclick="objectWithVariables()">
+        Задание на выбор свойства объекта
+      </button>
+      <button onclick="betterCalc()">новый калькулятор</button>
+    </nav>
+
+    <script src="./differentTypes.js"></script>
+    <script src="./sum.js"></script>
+    <script src="./countdown.js"></script>
+    <script src="./sounds.js"></script>
+    <script src="./calc.js"></script>
+    <script src="./agreement.js"></script>
+    <script src="./ageAndGender.js"></script>
+    <script src="./years.js"></script>
+    <script src="./objectWithVariables.js"></script>
+    <script src="./newCalc.js"></script>
+  </body>
 </html>
