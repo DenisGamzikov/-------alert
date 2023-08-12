@@ -1,0 +1,11 @@
+nav {
+    display: flex;
+    flex-direction: column;
+}
+button {
+    background-color: transparent;
+    max-width: 500px;
+    margin: 30px;
+    cursor: pointer;
+}
+
